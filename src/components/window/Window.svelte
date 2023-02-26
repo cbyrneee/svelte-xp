@@ -3,6 +3,7 @@
 	export let isOpen = false;
 	export let defaultX = 0;
 	export let defaultY = 0;
+	export let isAbsolute = true;
 
 	export function open() {
 		x = defaultX;
@@ -60,7 +61,7 @@
 </script>
 
 {#if isOpen}
-	<div class="absolute" style="left: {x}px; top: {y}px;">
+	<div class={isAbsolute ? 'absolute' : ''} style="left: {x}px; top: {y}px;">
 		<div class="overflow-clip rounded-t-[8px] bg-gradient-to-b from-[#0058EE] to-[#00138C] p-[2px]">
 			<div
 				on:mousedown={onHeaderMouseDown}
