@@ -29,7 +29,7 @@ body {
 
 @layer components {
 	.desktop {
-		background: url('/wallpapers/bliss.jpg') no-repeat center fixed;
+		background: url('/wallpapers/bliss.webp') no-repeat center fixed;
 		background-size: cover;
 	}
 }
