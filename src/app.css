@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Franklin Gothic Italic';
+	src: url('fonts/franklin-gothic-italic.ttf');
+}
+
+@font-face {
+	font-family: 'Tahoma Fallback';
+	src: url('fonts/tahoma-webfont.woff2') format('woff2'),
+		url('fonts/tahoma-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	cursor: url('cursors/pointer.cur'), auto !important;
+}
+
+/* Disable scroll to refresh on mobile devices */
+html,
+body {
+	overscroll-behavior: none;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+}
+
+@layer components {
+	.desktop {
+		background: url('wallpapers/bliss.jpg') no-repeat center fixed;
+		background-size: cover;
+	}
+}
