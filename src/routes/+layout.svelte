@@ -12,7 +12,7 @@
 	});
 </script>
 
-{#if ready}
+{#if !ready}
 	<div in:fade={{ duration: 200 }} out:fade={{ duration: 200 }}>
 		<div class="min-w-screen flex min-h-screen flex-row items-center">
 			<div class="mx-auto h-full w-[200px]">
