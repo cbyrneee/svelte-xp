@@ -76,7 +76,7 @@
 	<div
 		bind:this={contextMenuContainer}
 		in:fade={{ duration: 100 }}
-		class="absolute z-50 border border-[#ACA899] bg-white font-tahoma text-[11px]"
+		class="fixed z-50 border border-[#ACA899] bg-white font-tahoma text-[11px]"
 		style="left: {x}px; top: {y}px;"
 	>
 		<div class="flex flex-col items-start divide-y divide-[#ACA899] p-[3px]">
